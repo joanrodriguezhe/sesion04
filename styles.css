@@ -83,3 +83,42 @@ article {
 .cuarto {
     background-color: blue;
 }
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header' 
+    'main main right menu' 
+    'footer footer footer footer';
+    gap: 10px;
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(77, 155, 167, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-style: 30px;
+    height: 500px;
+}
