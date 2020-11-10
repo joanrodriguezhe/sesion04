@@ -43,3 +43,16 @@
 .item-card>img{
     width:120%;
 }
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: red;
+}
+
+article{
+    background-color: aquamarine;
+    margin: 10px;
+    width: 40%;
+
+}
