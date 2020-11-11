@@ -214,6 +214,16 @@ article {
 
 .companies {
     grid-area: companies;
+    font-size: 13px;
+    color:rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 80px;
+}
+.logos__companies{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .grid-container-matcha {
@@ -221,6 +231,7 @@ article {
     grid-template-areas: 
     'headerMatcha headerMatcha headerMatcha headerMatcha'
     'start start start-video start-video'
+    'companies companies companies companies'
     'topFeatures topFeatures topFeatures topFeatures'
     'tools tools tools tools'
     'testimonials testimonials testimonials testimonials'
