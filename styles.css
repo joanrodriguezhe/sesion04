@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     display: flex;
     /* flex-flow: <flex-direction> <flex-wrap> */
@@ -31,6 +37,8 @@
 .container-cards {
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .item-card {
@@ -106,10 +114,7 @@ article {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 
-    'header header header header' 
-    'main main right menu' 
-    'footer footer footer footer';
+    grid-template-areas: 'header header header header' 'main main right menu' 'footer footer footer footer';
     gap: 10px;
     background-color: burlywood;
     padding: 10px;
@@ -120,5 +125,54 @@ article {
     text-align: center;
     padding: 20px 0;
     font-style: 30px;
-    height: 500px;
+    height: 250px;
+}
+
+/* .grid-container-matcha{
+    display: grid;
+    grid-template-areas: 
+    'headerMatcha headerMatcha headerMatcha headerMatcha'
+    'start start start start'
+    'topFeatures'
+    ;
+} */
+
+.headerMatcha {
+    display: grid;
+    grid-template-columns: 2fr 8fr 3fr;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.headerMatcha a {
+    color: #025157;
+    text-decoration: none;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 16px;
+}
+
+.header__controls {
+    text-align: end;
+}
+
+.header__controls {
+    font-size: 14px;
+}
+
+.header__controls button {
+    background-color: #025157;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.header__controls button:hover {
+    background-color: #67b54b;
 }
