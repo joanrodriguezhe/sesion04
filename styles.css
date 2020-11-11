@@ -114,7 +114,10 @@ article {
 
 .grid-container {
     display: grid;
-    grid-template-areas: 'header header header header' 'main main right menu' 'footer footer footer footer';
+    grid-template-areas: 
+    'header header header header' 
+    'main main right menu' 
+    'footer footer footer footer';
     gap: 10px;
     background-color: burlywood;
     padding: 10px;
@@ -128,16 +131,9 @@ article {
     height: 250px;
 }
 
-/* .grid-container-matcha{
-    display: grid;
-    grid-template-areas: 
-    'headerMatcha headerMatcha headerMatcha headerMatcha'
-    'start start start start'
-    'topFeatures'
-    ;
-} */
 
 .headerMatcha {
+    grid-area: headerMatcha;
     display: grid;
     grid-template-columns: 2fr 8fr 3fr;
     align-items: center;
@@ -171,8 +167,69 @@ article {
     padding: 15px 20px;
     border-radius: 8px;
     transition: all .2s ease-in-out;
+    margin-left: 10px;
 }
 
 .header__controls button:hover {
     background-color: #67b54b;
+}
+
+.start {
+    grid-area: start;
+}
+
+.start h1{
+    font-size: 68px;
+    color: #025157;
+}
+
+.start p:first-of-type{
+    font-size:20px;
+    color:#46484c;
+    margin-bottom: 20px;
+}
+
+.start button{
+    background-color: #67b54b;
+    color:white;
+    margin-right: 20px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start p:last-of-type{
+    font-size: 14px;
+    color:rgba(139,139,139,.8);
+    margin-top: 10px;
+}
+
+.start-video {
+    grid-area: start-video;
+}
+
+.start-video>video {
+    width: 100%;
+}
+
+.companies {
+    grid-area: companies;
+}
+
+.grid-container-matcha {
+    display: grid;
+    grid-template-areas: 
+    'headerMatcha headerMatcha headerMatcha headerMatcha'
+    'start start start-video start-video'
+    'topFeatures topFeatures topFeatures topFeatures'
+    'tools tools tools tools'
+    'testimonials testimonials testimonials testimonials'
+    'compare compare compare compare'
+    'integrations integrations integrations integrations'
+    'moreInfo moreInfo moreInfo moreInfo'
+    'getStarted getStarted getStarted getStarted'
+    'footerMatcha footerMatcha footerMatcha footerMatcha';
+    gap: 15px;
+    background-color: burlywood;
+    padding: 10px;
 }
