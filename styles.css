@@ -226,6 +226,12 @@ article {
     margin-top: 40px;
 }
 
+.topFeatures{
+    grid-area: topFeatures;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .grid-container-matcha {
     display: grid;
     grid-template-areas: 
